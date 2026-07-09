@@ -15,25 +15,50 @@ st.set_page_config(
 # Custom CSS
 st.markdown("""
 <style>
-    .stButton > button {
-        width: 100%;
-        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-        color: white;
-        font-weight: bold;
-        font-size: 16px;
-        padding: 10px;
-    }
-    .result-card {
-        padding: 15px;
-        border-radius: 10px;
-        background: linear-gradient(135deg, #667eea22 0%, #764ba222 100%);
-        text-align: center;
-    }
+/* Background */
+body {
+    background-color: #0f172a;
+}
+
+/* Main container */
+.main {
+    background-color: #0f172a;
+    color: white;
+}
+
+/* Buttons */
+.stButton>button {
+    background: linear-gradient(90deg, #6366f1, #8b5cf6);
+    color: white;
+    border-radius: 10px;
+    height: 3em;
+    width: 100%;
+    font-weight: bold;
+}
+
+/* Titles */
+h1, h2, h3 {
+    color: #a5b4fc;
+}
+
+/* Cards effect */
+.css-1r6slb0 {
+    background-color: #1e293b;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+/* File uploader */
+.stFileUploader {
+    background-color: #1e293b;
+    padding: 10px;
+    border-radius: 10px;
+}
 </style>
 """, unsafe_allow_html=True)
 
 # Title
-st.title("📸 AI Image Selector")
+st.title("AI Image Selector")
 st.markdown("### Find your perfect photos with AI")
 
 # Initialize session state
